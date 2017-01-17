@@ -104,7 +104,9 @@ public class BankAccount {
     }
     
     public void retiro(double cantidad){
-        //Si 
+        //Si el saldo es mayor a 0 y la cantidad es mayor a 0
+        //la cantidad se restara al saldo, sino se imprimira
+        //"La operacion no fue exitosa"
         if((saldo>0) && (cantidad>0)){
            this.saldo = saldo - cantidad;
         }else{
