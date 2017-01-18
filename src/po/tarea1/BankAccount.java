@@ -15,6 +15,7 @@ public class BankAccount {
     private String titularCuenta;
     private double saldo;
     private String estado;
+    private int nip;
     
     //Constructor
     public BankAccount(){
@@ -22,13 +23,15 @@ public class BankAccount {
         titularCuenta="Ricardo Del Angel";
         saldo=400;
         estado="Activada";
+        nip=1234;
     }
     
-    public BankAccount(String numeroCuenta, String titularCuenta, double saldo, String estado, String clave){
+    public BankAccount(String numeroCuenta, String titularCuenta, double saldo, String estado, String clave, int nip){
         this.numeroCuenta=numeroCuenta;
         this.titularCuenta=titularCuenta;
         this.saldo=saldo;
         this.estado=estado;
+        this.nip=nip;
     }
     
     //numeroCuenta get and set
@@ -89,6 +92,13 @@ public class BankAccount {
         }else{
             this.estado=estado;
         }
+    }
+    //nip get and set
+    public int obtenNip(){
+        return nip;
+    }
+    public void ponNip(int nip){
+        this.nip=nip;
     }
     
     //Metodos
