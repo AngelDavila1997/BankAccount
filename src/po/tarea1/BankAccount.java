@@ -18,10 +18,10 @@ public class BankAccount {
     
     //Constructor
     public BankAccount(){
-        numeroCuenta="";
-        titularCuenta="";
-        saldo=0;
-        estado="";
+        numeroCuenta="0000000000000001";
+        titularCuenta="Ricardo Del Angel";
+        saldo=400;
+        estado="Activada";
     }
     
     public BankAccount(String numeroCuenta, String titularCuenta, double saldo, String estado, String clave){
